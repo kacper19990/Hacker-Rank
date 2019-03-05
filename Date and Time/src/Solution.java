@@ -22,6 +22,8 @@ class Result {
      *  3. INTEGER year
      */
 
+    private static final String[] DAYS = {"SUNDAY", "MONDAY","TUESDAY", "WEDNESDAY", "THURSDAY","FRIDAY","SATURDAY"};
+
     public static String findDay(int month, int day, int year) {
         if (month == 1 || month == 2)
             year = year - 1;
@@ -29,31 +31,8 @@ class Result {
         int yearLast = year % 100;
         int determinant = (int) (day + Math.floor(2.6 * (((month + 9) % 12) + 1) - 0.2) + yearLast
                 + Math.floor(yearLast / 4) + Math.floor(yearFirst / 4) - 2 * yearFirst) % 7;
-        determinant = Math.abs(determinant);
-        String dayInWords = "";
-        switch (determinant) {
-            case 0:
-                dayInWords = "SUNDAY";
-                break;
-            case 1:
-                dayInWords = "MONDAY";
-                break;
-            case 2:
-                dayInWords = "TUESDAY";
-                break;
-            case 3:
-                dayInWords = "WEDNESDAY";
-                break;
-            case 4:
-                dayInWords = "THURSDAY";
-                break;
-            case 5:
-                dayInWords = "FRIDAY";
-                break;
-            case 6:
-                dayInWords = "SATURDAY";
-        }
-        return (dayInWords);
+        determinant = Math.abs(determinant) % 7;
+        return (DAYS[determinant]);
     }
 
 }
