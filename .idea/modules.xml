@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Datatypes/Datatypes.iml" filepath="$PROJECT_DIR$/Datatypes/Datatypes.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Hacker-Rank.iml" filepath="$PROJECT_DIR$/.idea/Hacker-Rank.iml" />
       <module fileurl="file://$PROJECT_DIR$/IfElse/IfElse.iml" filepath="$PROJECT_DIR$/IfElse/IfElse.iml" />
       <module fileurl="file://$PROJECT_DIR$/Input 1/Input 1.iml" filepath="$PROJECT_DIR$/Input 1/Input 1.iml" />
