@@ -1,18 +1,40 @@
 import java.io.*;
 import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
 public class Solution {
+    static int H;
+    static int B;
+    static boolean flag;
 
-    public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner input = new Scanner(System.in);
-        int i = 1;
-        while (input.hasNext()){
-            String s = input.nextLine();
-            System.out.println(i + " " + s);
-            i++;
+    static{
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()) {
+            int h = scanner.nextInt();
+            int b = scanner.nextInt();
+
+            if (h < 1 || b < 1){
+                flag = false;
+                System.out.println("java.lang.Exception: Breadth and height must be positive");
+            }
+            else {
+                H = h;
+                B = b;
+                flag = true;
+            }
         }
-        input.close();
+        scanner.close();
     }
-}
+
+    public static void main(String[] args){
+        if(flag){
+            int area=B*H;
+            System.out.print(area);
+        }
+
+    }//end of main
+
+}//end of class
 
