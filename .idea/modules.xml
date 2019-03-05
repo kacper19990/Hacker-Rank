@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Hacker-Rank.iml" filepath="$PROJECT_DIR$/.idea/Hacker-Rank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IfElse/IfElse.iml" filepath="$PROJECT_DIR$/IfElse/IfElse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Input 1/Input 1.iml" filepath="$PROJECT_DIR$/Input 1/Input 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Input 2/Input 2.iml" filepath="$PROJECT_DIR$/Input 2/Input 2.iml" />
+    </modules>
+  </component>
+</project>
